@@ -1,0 +1,9 @@
+CREATE TABLE `todo-db`.users
+(
+    id BIGINT PRIMARY KEY,
+    title VARCHAR(50) NOT NULL,
+    description VARCHAR(100),
+    category_id BIGINT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
