@@ -1,6 +1,6 @@
 CREATE TABLE `todo-db`.users
 (
-    id BIGINT PRIMARY KEY,
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(50) NOT NULL,
     description VARCHAR(100),
     category_id BIGINT,
